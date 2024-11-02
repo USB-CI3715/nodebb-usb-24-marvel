@@ -1,0 +1,7 @@
+{
+    "id": "nodebb-theme-software",
+    "name": "Software",
+    "description": "Tema creado para el proyecto de la materia Ingeniería de Software",
+    "url": "https://github.com/nodebb/nodebb-theme-quickstart",
+    "baseTheme": "nodebb-theme-harmony"
+}

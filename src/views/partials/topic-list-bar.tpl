@@ -79,20 +79,20 @@
 
 function showCourseInfo(courseCode) {
 	const courseDescriptions = {
-		'MA1111': 'Matemáticas I: Introducción a conceptos básicos de álgebra y cálculo.',
-		'ID1111': 'Inglés I: Curso básico de inglés enfocado en gramática y vocabulario.',
-		'LLA111': 'Lenguaje I: Desarrollo de habilidades de comprensión lectora y escritura.',
-		'CSA211': 'Venezuela ante el Siglo XXI: Análisis de la situación política y social actual.',
-		'MA1112': 'Matemáticas II: Continuación de álgebra y principios de trigonometría.',
-		'FS1111': 'Física I: Fundamentos de mecánica y termodinámica.',
-		'ID1112': 'Inglés II: Curso intermedio de inglés con énfasis en conversación.',
-		'LLA112': 'Lenguaje II: Avance en técnicas de expresión oral y escrita.',
-		'CSA212': 'Venezuela ante el Siglo XXI II: Profundización en aspectos económicos.',
-		'MA1113': 'Matemáticas III: Introducción al cálculo diferencial e integral.',
-		'FS1112': 'Física II: Principios de electricidad y magnetismo.',
-		'ID1113': 'Inglés III: Inglés avanzado con enfoque en comprensión auditiva.',
-		'LLA113': 'Lenguaje III: Redacción y análisis crítico de textos complejos.',
-		'CSA213': 'Venezuela ante el Siglo XXI III: Perspectiva histórica y cultural.'
+		'MA1111': 'Matemáticas I: Introducción a conceptos básicos de álgebra y cálculo. Preparador: José Pérez.',
+		'ID1111': 'Inglés I: Curso básico de inglés enfocado en gramática y vocabulario. Preparador: María Chacón.',
+		'LLA111': 'Lenguaje I: Desarrollo de habilidades de comprensión lectora y escritura. Preparador: Cristina Álvarez.',
+		'CSA211': 'Venezuela ante el Siglo XXI: Análisis de la situación política y social actual. Preparador: Cristina Álvarez.',
+		'MA1112': 'Matemáticas II: Continuación de álgebra y principios de trigonometría. Preparador: Ernesto Gutiérrez',
+		'FS1111': 'Física I: Fundamentos de mecánica y termodinámica. Preparador: Daniel Hernández',
+		'ID1112': 'Inglés II: Curso intermedio de inglés con énfasis en conversación. Preparador: Camila Hernández.',
+		'LLA112': 'Lenguaje II: Avance en técnicas de expresión oral y escrita. Preparador: Samuel Rodríguez.',
+		'CSA212': 'Venezuela ante el Siglo XXI II: Profundización en aspectos económicos. Preparador: Félix Pérez.',
+		'MA1113': 'Matemáticas III: Introducción al cálculo diferencial e integral. Preparador: Juan Esquivel.',
+		'FS1112': 'Física II: Principios de electricidad y magnetismo. Preparador: Julio Campo.',
+		'ID1113': 'Inglés III: Inglés avanzado con enfoque en comprensión auditiva. Preparador: Andreina Contreras.',
+		'LLA113': 'Lenguaje III: Redacción y análisis crítico de textos complejos. Preparador: Marcos Pentacchio.',
+		'CSA213': 'Venezuela ante el Siglo XXI III: Perspectiva histórica y cultural. Preparador: Andrea Pereira.'
 	};
 
 	document.getElementById('course-description').innerText = courseDescriptions[courseCode];

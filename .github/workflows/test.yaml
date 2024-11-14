@@ -49,8 +49,7 @@ jobs:
           useLockFile: false
 
       - name: Add custom theme dependency
-          run: |
-            npm install file:themes/nodebb-theme-software
+          run: npm install file:themes/nodebb-theme-software
 
       - name: Setup for Redis
         env:

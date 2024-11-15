@@ -1,0 +1,10 @@
+{
+	"id": "nodebb-plugin-qa-students-filter",
+    "library": "./library.js",
+	"hooks": [
+		{
+			"hook": "filter:trimester.filter",
+			"method": "filterSubjectsByTrimester"
+		}
+	]
+}

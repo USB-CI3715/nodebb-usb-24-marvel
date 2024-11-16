@@ -109,12 +109,34 @@
     }
 </style>
 
-<!-- Script para mostrar solo el trimestre seleccionado -->
+<!-- Script para mostrar solo el trimestre seleccionado y la descripción del curso -->
 <script>
     function showTrimester(id) {
         document.querySelectorAll('.trimester-section').forEach(section => {
             section.classList.add('hidden');
         });
         document.getElementById(id).classList.remove('hidden');
+        document.getElementById('course-info').classList.add('hidden');
+    }
+
+    function showCourseInfo(courseCode) {
+        const courseDescriptions = {
+            'MA1111': 'Matemáticas I: Introducción a conceptos básicos de álgebra y cálculo.',
+            'ID1111': 'Inglés I: Curso básico de inglés enfocado en gramática y vocabulario.',
+            'LLA111': 'Lenguaje I: Desarrollo de habilidades de comprensión lectora y escritura.',
+            'CSA211': 'Venezuela ante el Siglo XXI: Análisis de la situación política y social actual.',
+            'MA1112': 'Matemáticas II: Continuación de álgebra y principios de trigonometría.',
+            'FS1111': 'Física I: Fundamentos de mecánica y termodinámica.',
+            'ID1112': 'Inglés II: Curso intermedio de inglés con énfasis en conversación.',
+            'LLA112': 'Lenguaje II: Avance en técnicas de expresión oral y escrita.',
+            'CSA212': 'Venezuela ante el Siglo XXI II: Profundización en aspectos económicos.',
+            'MA1113': 'Matemáticas III: Introducción al cálculo diferencial e integral.',
+            'FS1112': 'Física II: Principios de electricidad y magnetismo.',
+            'ID1113': 'Inglés III: Inglés avanzado con enfoque en comprensión auditiva.',
+            'LLA113': 'Lenguaje III: Redacción y análisis crítico de textos complejos.',
+            'CSA213': 'Venezuela ante el Siglo XXI III: Perspectiva histórica y cultural.'
+        };
+        document.getElementById('course-description').innerText = courseDescriptions[courseCode];
+        document.getElementById('course-info').classList.remove('hidden');
     }
 </script>
